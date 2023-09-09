@@ -3,7 +3,7 @@ class Note:
         self.id = id
         self.title = title
         self.text = text
-        self.dateTime = date_time
+        self.date_time = date_time
 
     def get_id(self):
         return self.id 
@@ -16,4 +16,5 @@ class Note:
     
     def get_date_time(self):
         return self.date_time
-    
+    def to_string(self):
+        return f"{self.id}\t{self.date_time}\t{self.title}\t{self.text}" 
