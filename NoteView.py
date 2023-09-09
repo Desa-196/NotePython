@@ -1,4 +1,4 @@
-class NoteView():
+class NoteView:
     def viewMainMenu():
         print("Выберите действие:")
         print("\t1. Просмотр всех заметок")
@@ -9,6 +9,13 @@ class NoteView():
 
     def readNumMainMenu():
         while (True):
-            readInt = input("Введите необходимый пункт меню: ")
-            if isinstance(readInt, int) and readInt > 0 and readInt <= 5:
+          readInt = input("Введите необходимый пункт меню: ")
+          try:
+               readInt = int(readInt)
+          except ValueError:
+               print("Ошибка ввода!")
+               continue
+          if readInt > 0 and readInt <= 5:
                 return readInt
+          else:
+              print("Такой номер меню отсутствует!")
