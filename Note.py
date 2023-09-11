@@ -16,5 +16,9 @@ class Note:
     
     def get_date_time(self):
         return self.date_time
+    
     def __str__(self):
-        return f"{self.id}\t{self.date_time}\t{self.title}\t{self.text}" 
+        return f"{self.id}\t{self.title}\t{self.text}\t{self.date_time}" 
+    
+    def dump(self):
+        return {"id":self.id, "title":self.title, "text":self.text, "date_time":str(self.date_time) }

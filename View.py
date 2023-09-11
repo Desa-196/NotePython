@@ -13,9 +13,9 @@ class View():
      
     def edit_note(self, title, text):
         array_note_parameter = []
-        print(f"Введите новый заголовок или оставьте поле пустым для сохранения старого({title})", end=None)
+        print(f"Введите новый заголовок или оставьте поле пустым для сохранения старого({title})", end="")
         array_note_parameter.append (input() or title)
-        print(f"Введите новый текст или оставьте поле пустым для сохранения старого({text})", end=None)
+        print(f"Введите новый текст или оставьте поле пустым для сохранения старого({text})", end="")
         array_note_parameter.append(input() or text)
         return array_note_parameter
     
@@ -24,7 +24,7 @@ class View():
 
     def read_num_main_menu(self):
         while (True):
-            print("Введите необходимый пункт меню: ", end=None)
+            print("Введите необходимый пункт меню: ", end="")
             readInt = self.read_int()
             if readInt > 0 and readInt <= 6:
                 return readInt
@@ -48,7 +48,7 @@ class View():
         return array_note_parameter
 
     def remove_note(self):
-        print("Введите id заметки для удаления: ", end=None)
+        print("Введите id заметки для удаления: ", end="")
         return self.read_int()
 
     def view_all_note(self, array_notes):
