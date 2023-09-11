@@ -5,8 +5,8 @@ class Presenter:
 
     def run(self):
         while True:
-            self.View.viewMainMenu()
-            numMenu = self.View.readNumMainMenu()
+            self.View.view_main_menu()
+            numMenu = self.View.read_num_main_menu()
             if (numMenu == 2):
                 array_nate_parameter = self.View.get_new_note()
                 self.Model.create_new_note(array_nate_parameter[0], array_nate_parameter[1])

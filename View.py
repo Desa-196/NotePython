@@ -1,5 +1,5 @@
 class View():
-    def viewMainMenu(self):
+    def view_main_menu(self):
         print("Выберите действие:")
         print("\t1. Просмотр всех заметок")
         print("\t2. Добавление заметки")
@@ -22,7 +22,7 @@ class View():
     def error_message(self, text):
         print(text)
 
-    def readNumMainMenu(self):
+    def read_num_main_menu(self):
         while (True):
             print("Введите необходимый пункт меню: ", end=None)
             readInt = self.read_int()
