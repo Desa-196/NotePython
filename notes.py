@@ -1,8 +1,8 @@
-from NotePresenter import NotePresenter
-from NoteView import NoteView
-from NoteModel import NoteModel
+from Presenter import Presenter
+from View import View
+from Model import Model
 
-noteModel = NoteModel
-noteView = NoteView
-notePresenter = NotePresenter(noteView, noteModel)
+noteModel = Model()
+noteView = View()
+notePresenter = Presenter(noteView, noteModel)
 notePresenter.run()
