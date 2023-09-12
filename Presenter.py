@@ -19,7 +19,7 @@ class Presenter:
                 array_nate_parameter = self.View.get_new_note()
                 self.Model.create_new_note(array_nate_parameter[0], array_nate_parameter[1])
 
-            #Запрашиваем у пользователя id заметки для редактирования, передем его модели и если есть такая заметка
+            #Запрашиваем у пользователя id заметки для редактирования, передаем его модели и если есть такая заметка
             #просим ввести данные для редактирования, если нет, сообщаем об этом
             elif(numMenu == 3):
                 id = self.View.read_id_note()

@@ -1,6 +1,5 @@
 import json
 from DataSaver import DataSaver
-from Note import Note
 
 class JsonFileSaver(DataSaver):
     def __init__(self, path):
